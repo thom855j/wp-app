@@ -63,11 +63,9 @@
     "wordpress-install-dir": "web/wp"
   },
   "scripts": {
-    "post-root-package-install": [
-      "php -r \"copy('.env.example', '.env');\""
-    ],
     "post-install-cmd": [
-      "@php -r \"require('functions.php'); rrmdir('web/wp/wp-content');\""
+      "@php -r \"require('functions.php'); rrmdir('web/wp/wp-content');\"",
+      "@php -r \"rename('.env.example', '.env');\""
     ],
     "test": [
       "phpcs"
