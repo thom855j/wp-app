@@ -46,11 +46,18 @@ Config::define('WP_HOME', env('WP_HOME'));
 Config::define('WP_SITEURL', env('WP_SITEURL'));
 
 /**
- * Custom Content Directory
+ * Custom Directories
  */
 Config::define('CONTENT_DIR', '/app');
+// WP-content
 Config::define('WP_CONTENT_DIR', $webroot_dir . Config::get('CONTENT_DIR'));
 Config::define('WP_CONTENT_URL', Config::get('WP_HOME') . Config::get('CONTENT_DIR'));
+// WP-plugins
+Config::define('WP_PLUGIN_DIR', $webroot_dir . '/wp/wp-plugins');
+Config::define('WP_PLUGIN_URL', Config::get('WP_SITEURL') . '/wp-plugins');
+// MU-plugins
+Config::define('WPMU_PLUGIN_DIR', $webroot_dir . '/wp/wp-modules');
+Config::define('WPMU_PLUGIN_URL', Config::get('WP_SITEURL') . '/wp-modules');
 
 /**
  * DB settings
@@ -85,14 +92,28 @@ Config::define('LOGGED_IN_SALT', env('LOGGED_IN_SALT'));
 Config::define('NONCE_SALT', env('NONCE_SALT'));
 
 /**
- * Custom Settings
+ * Security Settings
  */
-Config::define('AUTOMATIC_UPDATER_DISABLED', true);
-Config::define('DISABLE_WP_CRON', env('DISABLE_WP_CRON') ?: false);
+Config::define('AUTOMATIC_UPDATER_DISABLED', env('DISABLE_AUTO_UPDATE') ?: true);
 // Disable the plugin and theme file editor in the admin
 Config::define('DISALLOW_FILE_EDIT', true);
 // Disable plugin and theme updates and installation from the admin
 Config::define('DISALLOW_FILE_MODS', true);
+Config::define('COOKIE_DOMAIN', $_SERVER['HTTP_HOST']);
+Config::define('FS_METHOD', 'direct');
+//Config::define('FORCE_SSL_ADMIN', true);
+
+/**
+ * Performance Settings
+ */
+Config::define('DISABLE_WP_CRON', env('DISABLE_WP_CRON') ?: false);
+Config::define('WP_MEMORY_LIMIT', ini_get('memory_limit'));
+Config::define('AUTOSAVE_INTERVAL', 300);
+Config::define('WP_POST_REVISIONS', 1);
+
+/**
+ * Custom Settings
+ */
 // Default theme
 Config::define('WP_DEFAULT_THEME', env('WP_THEME') ?:'storefront');
 
@@ -111,7 +132,10 @@ if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROT
     $_SERVER['HTTPS'] = 'on';
 }
 
-$env_config = __DIR__ . '/environments/' . WP_ENV . '.php';
+/**
+ * Load environment
+ */
+$env_config = __DIR__ . '/env/' . WP_ENV . '.php';
 
 if (file_exists($env_config)) {
     require_once $env_config;

@@ -1,5 +1,5 @@
 {
-  "name": "roots/bedrock",
+  "name": "thom855j/wp-app",
   "type": "project",
   "license": "MIT",
   "description": "WordPress boilerplate with modern development tools, easier configuration, and an improved folder structure",
@@ -71,8 +71,8 @@
   "prefer-stable": true,
   "extra": {
     "installer-paths": {
-      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
-      "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
+      "web/wp/wp-modules/{$name}/": ["type:wordpress-muplugin"],
+      "web/wp/wp-plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
     },
     "wordpress-install-dir": "web/wp"
