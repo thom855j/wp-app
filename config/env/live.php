@@ -1,6 +1,6 @@
 <?php
 /**
- * Configuration overrides for WP_ENV === 'staging'
+ * Configuration overrides for WP_ENV === 'live'
  */
 
 use Roots\WPConfig\Config;
