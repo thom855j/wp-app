@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "945da839e8a78ab31334736a76a30e4d",
+    "content-hash": "929eea46bef8ee2d65df46c99a4271c0",
     "packages": [
         {
             "name": "composer/installers",
@@ -233,16 +233,16 @@
         },
         {
             "name": "roots/wordpress",
-            "version": "5.3.2",
+            "version": "5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "5.3.2"
+                "reference": "5.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/WordPress/zipball/5.3.2",
-                "reference": "5.3.2"
+                "url": "https://api.github.com/repos/WordPress/WordPress/zipball/5.4",
+                "reference": "5.4"
             },
             "require": {
                 "php": ">=5.3.2",
@@ -266,7 +266,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2019-12-18T22:19:57+00:00"
+            "time": "2020-03-31T20:06:05+00:00"
         },
         {
             "name": "roots/wordpress-core-installer",
@@ -554,14 +554,14 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/contact-form-7.zip?timestamp=1575118887"
+                "url": "https://downloads.wordpress.org/plugin/contact-form-7.zip?timestamp=1586384386"
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/contact-form-7/",
-            "time": "2019-11-30T13:01:27+00:00"
+            "time": "2020-04-08T22:19:46+00:00"
         },
         {
             "name": "wpackagist-plugin/easy-wp-smtp",
@@ -573,14 +573,14 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/easy-wp-smtp.zip?timestamp=1577149534"
+                "url": "https://downloads.wordpress.org/plugin/easy-wp-smtp.zip?timestamp=1583901716"
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/easy-wp-smtp/",
-            "time": "2019-12-24T01:05:34+00:00"
+            "time": "2020-03-11T04:41:56+00:00"
         },
         {
             "name": "wpackagist-plugin/goodbye-captcha",
@@ -611,14 +611,14 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.zip?timestamp=1575579844"
+                "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.zip?timestamp=1585750841"
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/google-analytics-dashboard-for-wp/",
-            "time": "2019-12-05T21:04:04+00:00"
+            "time": "2020-04-01T14:20:41+00:00"
         },
         {
             "name": "wpackagist-plugin/usagedd",
@@ -649,14 +649,14 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/w3-total-cache.zip?timestamp=1580399974"
+                "url": "https://downloads.wordpress.org/plugin/w3-total-cache.zip?timestamp=1586362196"
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/w3-total-cache/",
-            "time": "2020-01-30T15:59:34+00:00"
+            "time": "2020-04-08T16:09:56+00:00"
         },
         {
             "name": "wpackagist-plugin/webmaster-user-role",
@@ -687,14 +687,14 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.zip?timestamp=1579698247"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.zip?timestamp=1586325885"
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wordpress-seo/",
-            "time": "2020-01-22T13:04:07+00:00"
+            "time": "2020-04-08T06:04:45+00:00"
         },
         {
             "name": "wpackagist-plugin/wp-smushit",
@@ -706,14 +706,14 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-smushit.zip?timestamp=1579067375"
+                "url": "https://downloads.wordpress.org/plugin/wp-smushit.zip?timestamp=1586123397"
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wp-smushit/",
-            "time": "2020-01-15T05:49:35+00:00"
+            "time": "2020-04-05T21:49:57+00:00"
         },
         {
             "name": "wpackagist-plugin/wps-hide-login",
@@ -725,14 +725,14 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wps-hide-login.zip?timestamp=1579529490"
+                "url": "https://downloads.wordpress.org/plugin/wps-hide-login.zip?timestamp=1583763750"
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wps-hide-login/",
-            "time": "2020-01-20T14:11:30+00:00"
+            "time": "2020-03-09T14:22:30+00:00"
         },
         {
             "name": "wpackagist-theme/storefront",

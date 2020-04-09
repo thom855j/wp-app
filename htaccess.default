@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !^web
+RewriteRule ^(.*)$ web/$1 [L]
+
+php_value upload_max_filesize 5MB
