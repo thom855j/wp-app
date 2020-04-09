@@ -66,6 +66,7 @@
   "scripts": {
     "post-install-cmd": [
       "@php -r \"require('functions.php'); rrmdir('web/wp/wp-content');\"",
+      "@php -r \"mkdir('web/wp/wp-modules');\"",
       "@php -r \"rename('env.default', '.env');\"",
       "@php -r \"rename('htaccess.default', '.htaccess');\""
     ]
